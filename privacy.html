@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>톡링크 개인정보 처리방침</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d2733; --muted:#5b6775; --line:#e3e8ee; --accent:#2f6fed; --card:#f6f8fb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12161c; --fg:#e6ebf2; --muted:#9aa6b5; --line:#262d37; --accent:#7aa2ff; --card:#1a2029; }
+  }
+  html { background:var(--bg); }
+  body { margin:0 auto; max-width:760px; padding:24px 16px 64px; color:var(--fg); background:var(--bg);
+         font:16px/1.7 -apple-system,"Segoe UI","Noto Sans KR","Malgun Gothic",sans-serif; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  p, li { margin:6px 0; }
+  ul { padding-left:1.2em; }
+  .meta { color:var(--muted); font-size:.9rem; }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:12px 0; }
+  a { color:var(--accent); }
+  nav a { margin-right:12px; }
+</style>
+</head>
+<body>
+
+<nav><a href="#ko">한국어</a><a href="#en">English</a></nav>
+
+<main id="ko">
+<h1>톡링크 개인정보 처리방침</h1>
+<p class="meta">시행일: 2026-11-16 · 운영: happyvirus lab · 문의: <a href="mailto:happyvirus.lab@gmail.com">happyvirus.lab@gmail.com</a></p>
+
+<div class="box">
+<strong>한 줄 요약</strong> 톡링크는 계정이 없고, 말한 내용·번역한 글·사진을 서버에 보내거나 저장하지 않습니다. 번역과 음성 인식은 기기 안에서 합니다. 아래 "외부와 통신하는 경우"에 적은 것만 인터넷을 씁니다.
+</div>
+
+<h2>1. 처리하는 정보와 목적</h2>
+<ul>
+  <li><strong>마이크 음성</strong>: 말한 내용을 글자로 바꿔 번역하기 위해서만 씁니다. 음성은 기기 안에서 처리되고 파일로 저장하지 않으며 톡링크가 서버로 보내지 않습니다.</li>
+  <li><strong>카메라 사진</strong>: 사진 속 글자를 읽어 번역하기 위해 씁니다. 글자 인식은 기기 안에서 합니다. 사진은 이용자가 직접 <em>저장</em> 또는 <em>공유</em>를 누를 때만 사진첩에 저장되거나 공유창으로 넘어갑니다. 처리 중 만들어진 임시 이미지는 앱의 캐시에 남을 수 있으며, 앱을 지우거나 기기에서 캐시를 비우면 지워집니다.</li>
+  <li><strong>입력한 글자와 번역 결과</strong>: 화면에 번역을 보여 주기 위해서만 씁니다. 대화 내용과 번역 결과는 저장하지 않습니다.</li>
+  <li><strong>설정</strong>: 선택한 언어 쌍, 화면 설정(밝기·글자 크기·읽기 속도 등)은 이 기기 안에만 저장됩니다.</li>
+</ul>
+<p>톡링크는 회원가입·로그인이 없고 이름·연락처·위치·기기 식별자를 수집하지 않습니다.</p>
+
+<h2>2. 필요한 권한</h2>
+<ul>
+  <li><strong>마이크</strong>: 음성 번역. 끄면 음성 입력만 쓸 수 없고 글자 입력은 쓸 수 있습니다.</li>
+  <li><strong>카메라</strong>: 카메라 번역. 끄면 카메라 번역만 쓸 수 없습니다.</li>
+  <li><strong>인터넷</strong>: 아래 3항의 통신에만 씁니다.</li>
+</ul>
+<p>마이크·카메라 권한은 기기 설정에서 언제든 끌 수 있습니다.</p>
+
+<h2>3. 외부와 통신하는 경우</h2>
+<ul>
+  <li><strong>번역 모델 내려받기(Google ML Kit)</strong>: 처음 쓰는 언어의 번역 모델을 Google 서버에서 내려받습니다. 모델 파일만 받으며 이용자의 글자·음성은 보내지 않습니다.</li>
+  <li><strong>홍보 목록 불러오기(GitHub)</strong>: 앱 화면 위쪽 홍보 줄을 보여 주기 위해, 앱을 켤 때와 앱으로 돌아올 때마다 홍보 목록 파일을 공개 저장소(GitHub, <code>raw.githubusercontent.com</code>)에서 내려받고, 홍보 줄이 보일 때 작은 그림을 받습니다. 이때 기기의 IP 주소 등 일반적인 접속 정보가 GitHub 서버에 전달될 수 있으며 GitHub의 개인정보 처리방침에 따라 처리됩니다. 이 요청에 이름·연락처·기기 식별자·번역 내용은 담지 않고, 이용자를 식별하거나 이용 기록을 모으는 데 쓰지 않습니다. 받은 목록은 기기에 저장해 두었다가 인터넷이 없을 때 씁니다. 인터넷이 없어도 번역 기능에는 영향이 없습니다.</li>
+  <li><strong>홍보 줄을 눌렀을 때</strong>: 운영자의 유튜브 채널이나 광고주 사이트로 이동합니다. 광고주 항목에는 "광고" 표시가 붙습니다. 이동한 사이트는 톡링크가 운영하지 않으며 그곳의 정보 처리는 해당 사이트의 방침을 따릅니다.</li>
+  <li><strong>온라인 번역 옵션(선택, 기본 꺼짐)</strong>: 이용자가 설정에서 직접 켜고 동의하며, 직접 입력한 Groq API 키를 쓸 때만 동작합니다. 켜면 한국어에서 번역할 때 번역할 문장과 이용자의 API 키가 Groq(미국)의 서버로 전송됩니다. 알레르기·건강·음식 안전과 관련된 문장은 보내지 않고 기기 안에서 번역합니다. 끄면 전송은 일어나지 않습니다. 전송된 문장은 Groq의 방침에 따라 처리됩니다.</li>
+</ul>
+<p>기기 제조사가 제공하는 음성 인식·음성 읽기 기능을 쓰는 설정에서는, 기기와 운영체제에 따라 해당 제공자의 방침이 적용될 수 있습니다. 톡링크가 음성을 서버로 보내는 것은 아닙니다.</p>
+
+<h2>4. 보유 및 이용 기간</h2>
+<ul>
+  <li>설정: 앱을 지우거나 앱 데이터를 지울 때까지 이 기기에 보관합니다.</li>
+  <li>대화·음성·번역 결과: 저장하지 않습니다.</li>
+  <li>내려받은 홍보 목록: 새 목록을 받으면 교체되고, 앱 삭제 시 함께 지워집니다.</li>
+</ul>
+
+<h2>5. 제3자 제공·위탁·국외 이전</h2>
+<ul>
+  <li>톡링크가 이용자의 개인정보를 제3자에게 제공하거나 처리를 위탁하지 않습니다.</li>
+  <li>국외 이전은 이용자가 직접 켠 온라인 번역 옵션을 쓸 때만 일어납니다(3항, 전송 항목: 번역할 문장·API 키, 이전 국가: 미국, 이전 받는 자: Groq). 거부하려면 옵션을 끄면 됩니다(기본 꺼짐).</li>
+</ul>
+
+<h2>6. 이용자의 권리</h2>
+<p>톡링크는 이용자를 식별할 수 있는 정보를 서버에 보관하지 않으므로 열람·정정·삭제를 요청할 서버 측 정보가 없습니다. 기기에 저장된 설정은 앱 설정에서 바꾸거나 앱 데이터를 지워 삭제할 수 있습니다. 궁금한 점은 아래 연락처로 문의해 주세요.</p>
+
+<h2>7. 아동</h2>
+<p>톡링크는 연령과 관계없이 이용자의 개인정보를 수집하지 않으며, 만 14세 미만 아동의 개인정보를 별도로 수집하지 않습니다.</p>
+
+<h2>8. 변경</h2>
+<p>내용이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다.</p>
+
+<h2>9. 문의</h2>
+<p>운영: happyvirus lab · <a href="mailto:happyvirus.lab@gmail.com">happyvirus.lab@gmail.com</a></p>
+</main>
+
+<main id="en" lang="en">
+<h2>Toklink Privacy Policy (English)</h2>
+<p class="meta">Effective: 2026-11-16 · Operator: happyvirus lab · Contact: <a href="mailto:happyvirus.lab@gmail.com">happyvirus.lab@gmail.com</a></p>
+
+<div class="box"><strong>Summary</strong> Toklink has no accounts. It does not send your speech, text or photos to a server and does not store them. Translation and speech recognition run on your device. Only the cases listed under "When the app uses the internet" connect to the network.</div>
+
+<h2>What we process</h2>
+<ul>
+  <li><strong>Microphone audio</strong> is used only to turn speech into text for translation. It is processed on the device, is not saved to a file, and is not sent to a server by Toklink.</li>
+  <li><strong>Camera photos</strong> are used to read and translate text in the picture. Text recognition runs on the device. A photo is saved or shared only when you tap Save or Share. Temporary images made during processing may remain in the app cache until you clear the cache or uninstall the app.</li>
+  <li><strong>Typed text and translations</strong> are shown on screen and are not stored.</li>
+  <li><strong>Settings</strong> (language pair, display options) are stored only on your device.</li>
+</ul>
+<p>Toklink has no sign-up or login and does not collect your name, contact details, location or device identifiers.</p>
+
+<h2>Permissions</h2>
+<p>Microphone (voice translation), camera (camera translation) and internet (see below). You can turn the microphone and camera off in your device settings at any time; text input keeps working.</p>
+
+<h2>When the app uses the internet</h2>
+<ul>
+  <li><strong>Translation model download (Google ML Kit):</strong> language models are downloaded from Google servers the first time you use a language. Only model files are downloaded; your speech and text are not sent.</li>
+  <li><strong>Promotion list (GitHub):</strong> to show the promotion banner, the app downloads a list file from a public repository (<code>raw.githubusercontent.com</code>) when it starts and each time you return to it, and downloads small images when the banner is shown. Standard connection data such as your IP address may be received by GitHub and is handled under GitHub's privacy policy. Toklink does not put your name, contact details, device identifiers or translated content in this request and does not use it to identify or track you. The list is cached on the device for offline use; translation works without internet.</li>
+  <li><strong>Tapping the banner</strong> opens the operator's YouTube channels or an advertiser's site, which Toklink does not operate. Sponsored items are labeled "Ad".</li>
+  <li><strong>Online translation option (optional, off by default):</strong> only if you turn it on, consent, and enter your own Groq API key. When enabled, translating from Korean sends the sentence and your API key to Groq (United States) servers. Sentences about allergies, health or food safety are not sent and are translated on the device. When it is off, nothing is sent. Sent text is handled under Groq's policy.</li>
+</ul>
+<p>If you use the speech recognition or text-to-speech provided by your device maker, that provider's policy may apply depending on the device and OS. Toklink itself does not send speech to a server.</p>
+
+<h2>Retention, sharing, transfers</h2>
+<p>Settings stay on the device until you clear app data or uninstall. Conversations, audio and translations are not stored. Toklink does not sell or share personal information with third parties and does not outsource processing. A cross-border transfer (to the United States) happens only when you use the online translation option described above.</p>
+
+<h2>Children, changes, contact</h2>
+<p>Toklink does not collect personal information from anyone, including children under 14. Changes will be posted on this page with a new effective date. Contact: <a href="mailto:happyvirus.lab@gmail.com">happyvirus.lab@gmail.com</a>.</p>
+</main>
+
+</body>
+</html>
