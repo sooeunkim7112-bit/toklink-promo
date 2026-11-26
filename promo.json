@@ -2,12 +2,24 @@
   "version": 1,
   "items": [
     {
-      "id": "happyvirus30",
+      "id": "happyvirus30a",
       "title": "한대리의 이중생활",
-      "cta": "새 에피소드",
+      "cta": "유튜브 채널 구경가기",
       "url": "https://www.youtube.com/@happyvirus.lab.30",
-      "thumb": "https://raw.githubusercontent.com/sooeunkim7112-bit/toklink-promo/main/img/happyvirus_30.jpg",
-      "langs": ["ko"]
+      "thumb": "https://raw.githubusercontent.com/sooeunkim7112-bit/toklink-promo/main/img/happyvirus_30_a.jpg",
+      "langs": [
+        "ko"
+      ]
+    },
+    {
+      "id": "happyvirus30b",
+      "title": "한대리의 이중생활",
+      "cta": "유튜브 채널 구경가기",
+      "url": "https://www.youtube.com/@happyvirus.lab.30",
+      "thumb": "https://raw.githubusercontent.com/sooeunkim7112-bit/toklink-promo/main/img/happyvirus_30_b.jpg",
+      "langs": [
+        "ko"
+      ]
     }
   ]
 }
